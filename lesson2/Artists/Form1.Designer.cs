@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.box1 = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Box2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -45,12 +45,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "username";
             // 
-            // textBox1
+            // box1
             // 
-            this.textBox1.Location = new System.Drawing.Point(155, 84);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(154, 26);
-            this.textBox1.TabIndex = 1;
+            this.box1.Location = new System.Drawing.Point(155, 84);
+            this.box1.Name = "box1";
+            this.box1.Size = new System.Drawing.Size(154, 26);
+            this.box1.TabIndex = 1;
             // 
             // password
             // 
@@ -61,12 +61,12 @@
             this.password.TabIndex = 2;
             this.password.Text = "password";
             // 
-            // textBox2
+            // Box2
             // 
-            this.textBox2.Location = new System.Drawing.Point(155, 133);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(154, 26);
-            this.textBox2.TabIndex = 3;
+            this.Box2.Location = new System.Drawing.Point(155, 133);
+            this.Box2.Name = "Box2";
+            this.Box2.Size = new System.Drawing.Size(154, 26);
+            this.Box2.TabIndex = 3;
             // 
             // button1
             // 
@@ -83,9 +83,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(562, 403);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.Box2);
             this.Controls.Add(this.password);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.box1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -99,9 +99,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox box1;
         private System.Windows.Forms.Label password;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Box2;
         private System.Windows.Forms.Button button1;
     }
 }
