@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.box1 = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.Label();
             this.Box2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -44,13 +43,6 @@
             this.label1.Size = new System.Drawing.Size(80, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "username";
-            // 
-            // box1
-            // 
-            this.box1.Location = new System.Drawing.Point(155, 84);
-            this.box1.Name = "box1";
-            this.box1.Size = new System.Drawing.Size(154, 26);
-            this.box1.TabIndex = 1;
             // 
             // password
             // 
@@ -67,6 +59,8 @@
             this.Box2.Name = "Box2";
             this.Box2.Size = new System.Drawing.Size(154, 26);
             this.Box2.TabIndex = 3;
+            this.Box2.Text = "k";
+            this.Box2.TextChanged += new System.EventHandler(this.Box2_TextChanged);
             // 
             // button1
             // 
@@ -76,6 +70,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "signin";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -85,12 +80,12 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Box2);
             this.Controls.Add(this.password);
-            this.Controls.Add(this.box1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,7 +94,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox box1;
         private System.Windows.Forms.Label password;
         private System.Windows.Forms.TextBox Box2;
         private System.Windows.Forms.Button button1;

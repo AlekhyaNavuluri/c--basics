@@ -16,5 +16,36 @@ namespace signin
         {
             InitializeComponent();
         }
+
+        private void Box2_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void box1_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var p = Box2.Text;
+            var u = box1.Text;
+            var b = u + "" + p;
+            MessageBox.Show("b");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        
+
+       
+
+       
+
+       
     }
 }
